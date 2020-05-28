@@ -11,17 +11,11 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <style>
       .bg-cover {
-        background-image:url('./bg-full.jpg');
+        background-image:url('./bg-full.jpeg');
         background-repeat:no-repeat;
         background-attachment:fixed;
         background-position:center;
         background-size: cover;
-      }
-      @media only screen and (max-width: 767px) {
-        .bg-cover {
-          background-image: url('./bg-full.jpg');
-          background-size: cover;
-        }
       }
       p {
         color: white;
@@ -31,35 +25,49 @@
       }
       .subtitle {
         font-family: 'Caveat';font-size: 30px;
+        color: white;
       }
       .coming {
         font-family: 'Quicksand';font-size: 14px;
       }
       .touch {
         font-family: 'Quicksand';font-size: 12px;
+        color: black;
       }
       a {
-        color: white;
+        color: black;
       }
       a:hover {
-        color: white;
+        color: black;
+      }
+      @media only screen and (max-width: 767px) {
+        .bg-cover {
+          background-image: url('./bg-full.jpeg');
+          background-size: cover;
+        }
+        .logo {
+          width: 250px;
+        }
+        .subtitle {
+          font-family: 'Caveat';
+          font-size: 20px;
+          color: white;
+        }
       }
     </style>
-    <title>People Science</title>
+    <title>Goldn Health</title>
   </head>
   <body>
     <div class="container-fluid bg-cover">
         <div class="row">
             <div class="col-12 p-0">
-                <div class=" min-vh-100 text-center m-0 d-flex flex-column justify-content-center">
-                    <h1 class="display-4"><img src="./logo.png"></h1>
+                <div class=" min-vh-100 text-center m-0 d-flex flex-column">
                     </p>
-                    <p class="lead subtitle">If you're here, there <br>must be a reason.</p>
-                    <p class="lead subtitle"></p>
-                    <p class="lead coming">COMING SOON.</p>
+                    <h1 class="display-4"><img class="logo" src="./logo.png"></h1>
                     </p>
-                    <p class="lead touch">Get in touch: <a href="mailto: info@peoplescienceco.com">info@peoplescienceco.com</a></p>
-                    </div>
+                    <p class="lead touch">Get in touch.<br><a href="mailto: info@goldnhealth.com">info@goldnhealth.com</a></p>
+                    <div class="subtitle fixed-bottom">If you're here, there <br>must be a reason.</p>
+                    </p>
                 </div>
             </div>
         </div>
